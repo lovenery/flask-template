@@ -26,5 +26,12 @@ python main.py
 # Deploy using Heroku Git
 git remote add heroku https://git.heroku.com/???.git # or heroku git:remote -a ???
 git push heroku master
+
+# Copy to new project
+cp -r flask-template/ new-project/
+cd new-project/
+rm -rf .git
+vim README.md
+git init
 ```
 
